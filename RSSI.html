@@ -16,7 +16,6 @@
   // Called when we get a line of data - updates the light color
   function onLine(v) {
     console.log("Received: "+JSON.stringify(v));
-    path.style.fill="rgb("+Math.round(v*255)+",0,0)";
   }
   
   if (connection) {
