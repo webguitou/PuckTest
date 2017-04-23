@@ -23,9 +23,11 @@
   document.body.onclick = function() {
      console.log(connection)
      
-     if( connection == "undefined") 
-       return false;
-      
+     if( connection == "undefined"){
+         console.log("undefined");
+         return false;
+     }
+   
      if(connection.isOpen || connection.isOpening){
         return  false;
      }
