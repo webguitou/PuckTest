@@ -22,7 +22,10 @@
   
   document.body.onclick = function() {
      console.log(connection)
-   
+     
+     if( connection.isOpen || connection.isOpening ){
+        return;
+     }
    
      Puck.connect(function(c) {
            console.log(c);
