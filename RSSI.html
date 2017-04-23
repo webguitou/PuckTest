@@ -21,6 +21,9 @@
   }
   
   document.body.onclick = function() {
+     console.log(connection)
+   
+   
      Puck.connect(function(c) {
            console.log(c);
            if (!c) {
