@@ -23,7 +23,7 @@
   document.body.onclick = function() {
      console.log(connection)
      
-     if( connection == undefined){
+     if( !connection ){
          console.log("pas de connection");
          return false;
      }
