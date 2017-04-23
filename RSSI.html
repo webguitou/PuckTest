@@ -52,6 +52,7 @@
              }
            });
       
+        connection.write("reset();\n", function() {
            // Wait for it to reset itself
           setTimeout(function() {
             // Now tell it to write data on the current light level to Bluetooth
@@ -59,6 +60,7 @@
             connection.write("setInterval(function(){Bluetooth.println(Puck.light());},100);\n",
               function() { console.log("Ready..."); });
           }, 1500);
+        });
       
        });
   }
