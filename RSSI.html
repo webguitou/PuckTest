@@ -23,7 +23,7 @@
   document.body.onclick = function() {
      console.log(connection)
      
-     if( connection != undefined && (connection.isOpen || connection.isOpening) ){
+     if( connection && (connection.isOpen || connection.isOpening) ){
         return  false;
      }
    
