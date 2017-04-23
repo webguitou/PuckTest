@@ -24,7 +24,7 @@
      console.log(connection)
      
      if( connection.isOpen || connection.isOpening ){
-        return;
+        return  false;
      }
    
      Puck.connect(function(c) {
