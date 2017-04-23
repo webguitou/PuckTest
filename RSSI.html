@@ -9,7 +9,7 @@
    </style>    
  </head>
  <body>
-
+  <button type="button" onClick="clearPuck()">Clear Interval</button>
   <script src="https://www.puck-js.com/puck.js"></script>
   <script type="text/javascript">
   var connection;
@@ -64,6 +64,11 @@
       
        });
   }
+  
+  function clearPuck(){
+      connection.write("clearInterval();\n"
+  }
+  
   </script>
 </body>
 </html>
