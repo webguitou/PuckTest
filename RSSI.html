@@ -23,15 +23,12 @@
   document.body.onclick = function() {
      console.log(connection)
      
-     if( connection ){
+     Already connect
+     if( connection && (connection.isOpen || connection.isOpening)){
          console.log("pas de connection");
          return false;
      }
-   
-     if(connection.isOpen || connection.isOpening){
-        return  false;
-     }
-   
+     
      Puck.connect(function(c) {
            console.log(c);
            if (!c) {
